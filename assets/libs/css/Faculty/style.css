@@ -1,0 +1,10 @@
+.wrapper{
+    max-width: 900px;
+    max-height: 400px;
+    margin:auto;
+    background-color: rgb(181, 255, 230);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 600px 300px;
+   
+}
