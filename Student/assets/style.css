@@ -1,0 +1,72 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+
+
+@media screen and (max-width: 700px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+.welcome_section{
+  margin-top: 10px;
+  padding: 12px;
+  background-color: grey;
+  text-align: center;
+  font-size: 100px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: auto ;
+  grid-gap: 10px;
+  
+    
+}
+
+.grid-container > div {
+  
+  border: 1px solid red;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  
+}
+.grid-container , button{
+  font-size: 40px;
+  width: 100%;
+ 
+}
+
+#grid_button1{
+  
+  font-size: 40px;
+  bottom: 50px;
+  
+}
