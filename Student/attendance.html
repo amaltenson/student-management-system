@@ -1,12 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/Student/assets/style.css">
 </head>
 <body>
-    <h1>attendence</h1>
+
+    <!--top navbar    -->
+    <div class="navbar">
+        <span style="font-size:50px;cursor:pointer;color: white;" onclick="openNav()">☰</span> 
+        <div class="top_nav_right">
+            <a href="login.html"><i class="fa fa-fw fa-user"></i>Logout</a>
+        </div> 
+    </div>
+    
+    <!--side navbar-->
+    <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="welcome.html"> Home</a> 
+    <a href="attendance.html">Attendence</a>
+    <a href="timetable.html">Timetable</a>
+    <a href="marks.html">Marks</a>
+    <a href="login.html">Logout</a>
+    </div>
+
+
+    <!--script for side navbar-->
+    <script>
+    function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+   
 </body>
-</html>
+</html> 
