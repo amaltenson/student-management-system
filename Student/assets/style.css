@@ -42,7 +42,7 @@ body {
 .welcome_section{
   margin: auto;
   padding: 5px;
-  background-color: grey;
+  background-color: white;
   text-align: center;
   font-size: 20px;
   
@@ -203,4 +203,11 @@ table, th, td {
 
 .profile_pic{
   float: right;
+}
+
+/* markspage*/
+
+.table_header{
+  padding-left: 250px;
+  font-size: 20px;
 }
