@@ -211,3 +211,26 @@ table, th, td {
   padding-left: 250px;
   font-size: 20px;
 }
+
+/*timetable page*/
+
+.timetable{
+  font-size: 30px;
+  padding-left: 250px;
+}
+
+.table_content{
+  border: 2px solid red;
+}
+
+.timetable_content{
+  padding-left: 250px;
+}
+
+th,tr {
+ border: 1px solid red; 
+}
+
+
+
+/*attendence page*/
