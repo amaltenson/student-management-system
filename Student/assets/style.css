@@ -59,7 +59,7 @@ body {
 
 .grid-container > div {
   position: relative;
-  background-color: red;
+  background-color: #555;
   border: 1px solid black;
   text-align: center;
   padding: 25px 0;
@@ -83,6 +83,10 @@ body {
   background-color: yellow;
 }
 
+#grid_button a:hover{
+  background-color: #04AA6D;
+}
+
 #grid_button1{
   
   font-size: 20px;
@@ -93,6 +97,11 @@ body {
   right: 0;
   background-color: yellow;
 }
+
+#grid_button1 a:hover{
+  background-color: #04AA6D;
+}
+
 #grid_button2{
   
   font-size: 20px;
@@ -103,6 +112,10 @@ body {
   right: 0;
   background-color: yellow;
   
+}
+
+#grid_button2 a:hover{
+  background-color: #04AA6D;
 }
 
 #grid_button3{
