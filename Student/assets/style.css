@@ -214,21 +214,23 @@ table, th, td {
 
 /*timetable page*/
 
-.timetable{
+.timetable_heading{
   font-size: 30px;
   padding-left: 250px;
+  align-items: center;
 }
 
 .table_content{
-  border: 2px solid red;
+  border: 0px solid red;
 }
 
 .timetable_content{
   padding-left: 250px;
+  margin-top: 50px;
 }
 
 th,tr {
- border: 1px solid red; 
+ border: 3px solid black; 
 }
 
 
