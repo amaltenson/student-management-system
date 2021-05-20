@@ -59,7 +59,7 @@ body {
 
 .grid-container > div {
   position: relative;
-  background-color: red;
+  background-color: #555;
   border: 1px solid black;
   text-align: center;
   padding: 25px 0;
@@ -83,6 +83,10 @@ body {
   background-color: yellow;
 }
 
+#grid_button a:hover{
+  background-color: #04AA6D;
+}
+
 #grid_button1{
   
   font-size: 20px;
@@ -93,6 +97,11 @@ body {
   right: 0;
   background-color: yellow;
 }
+
+#grid_button1 a:hover{
+  background-color: #04AA6D;
+}
+
 #grid_button2{
   
   font-size: 20px;
@@ -103,6 +112,10 @@ body {
   right: 0;
   background-color: yellow;
   
+}
+
+#grid_button2 a:hover{
+  background-color: #04AA6D;
 }
 
 #grid_button3{
@@ -207,9 +220,18 @@ table, th, td {
 
 /* markspage*/
 
-.table_header{
+.mark_table_content{
   padding-left: 250px;
-  font-size: 20px;
+  padding-top: 20px;
+}
+
+.mark_table{
+  border: 2px solid;
+  width: fit-content;
+}
+
+.mark_table, td, tr, th{
+  border: 2px solid;
 }
 
 /*timetable page*/
@@ -229,10 +251,25 @@ table, th, td {
   margin-top: 50px;
 }
 
+<<<<<<< HEAD
 th,tr {
  border: 3px solid black; 
 }
-
-
+=======
+>>>>>>> 4673a38b4456aac4d367ac94289f98885cd538e7
 
 /*attendence page*/
+
+.attendance_table_content{
+  padding-left: 250px;
+  padding-top: 20px;
+}
+
+.attendance_table{
+  border: 2px solid;
+  width: fit-content;
+}
+
+.attendance_table, td, tr, th{
+  border: 2px solid;
+}
