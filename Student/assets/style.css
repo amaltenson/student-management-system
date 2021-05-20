@@ -250,6 +250,18 @@ table, th, td {
 }
 
 
-
-
 /*attendence page*/
+
+.attendance_table_content{
+  padding-left: 250px;
+  padding-top: 20px;
+}
+
+.attendance_table{
+  border: 2px solid;
+  width: fit-content;
+}
+
+.attendance_table, td, tr, th{
+  border: 2px solid;
+}
