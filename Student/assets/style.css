@@ -220,9 +220,18 @@ table, th, td {
 
 /* markspage*/
 
-.table_header{
+.mark_table_content{
   padding-left: 250px;
-  font-size: 20px;
+  padding-top: 20px;
+}
+
+.mark_table{
+  border: 2px solid;
+  width: fit-content;
+}
+
+.mark_table, td, tr, th{
+  border: 2px solid;
 }
 
 /*timetable page*/
@@ -240,9 +249,6 @@ table, th, td {
   padding-left: 250px;
 }
 
-th,tr {
- border: 1px solid red; 
-}
 
 
 
