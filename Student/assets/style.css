@@ -231,32 +231,21 @@ table, th, td {
 }
 
 .mark_table, td, tr, th{
-  border: 2px solid;
+  border: 5px solid;
 }
 
 /*timetable page*/
 
-.timetable_heading{
-  font-size: 30px;
-  padding-left: 250px;
-  align-items: center;
-}
-
-.table_content{
-  border: 0px solid red;
+.timetable_table th tr td{
+  border: 5px solid black;
 }
 
 .timetable_content{
-  padding-left: 250px;
-  margin-top: 50px;
+  
+  margin-top: 25px;
 }
 
-<<<<<<< HEAD
-th,tr {
- border: 3px solid black; 
-}
-=======
->>>>>>> 4673a38b4456aac4d367ac94289f98885cd538e7
+
 
 /*attendence page*/
 
@@ -271,5 +260,5 @@ th,tr {
 }
 
 .attendance_table, td, tr, th{
-  border: 2px solid;
+  border: 5px solid;
 }
