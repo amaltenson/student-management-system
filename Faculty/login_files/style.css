@@ -1,0 +1,206 @@
+/* common for all page*/
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.navbar {
+  margin: auto;
+  background-color: #555;
+  overflow: auto;
+  
+}
+
+.navbar a {
+  float: left;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+
+
+@media screen and (max-width: 700px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+/*welcome page*/
+
+.welcome_section{
+  margin: auto;
+  padding: 5px;
+  background-color: pink;
+  text-align: center;
+  font-size: 20px;
+  
+}
+
+.grid-container {
+  margin: 5px auto;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto ;
+  grid-gap: 10px;
+      
+}
+
+.grid-container > div {
+  position: relative;
+  background-color: skyblue;
+  border: 1px solid black;
+  text-align: center;
+  padding: 25px 0;
+  font-size: 20px;
+  
+}
+.grid-container , button{
+  font-size: 40px;
+  width: 75%;
+ 
+}
+
+#grid_button{
+  
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  padding-left: 0;
+  width: 100%;
+  right: 0;
+  background-color: yellow;
+}
+
+#grid_button1{
+  
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  padding-left: 0;
+  width: 100%;
+  right: 0;
+  background-color: yellow;
+}
+#grid_button2{
+  
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  padding-left: 0;
+  width: 100%;
+  right: 0;
+  background-color: yellow;
+  
+}
+
+#grid_button3{
+  
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  padding-left: 0;
+  width: 100%;
+  right: 0;
+  background-color: yellow;
+}
+
+a{
+  text-decoration: none;
+}
+
+#grid_button3 a:hover{
+  background-color: #04AA6D;
+}
+
+/* marks ,attendence , timetable, profile navbars */
+
+.top_nav_right{
+  float: right;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #555;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+/*profile page*/
+table, th, td {
+  
+  align-items: center;
+  border-collapse: collapse;
+  padding: 15px;
+  
+}
+
+.profile_content{
+  padding: 20px 250px;
+}
+
+.profile_pic{
+  float: right;
+}
