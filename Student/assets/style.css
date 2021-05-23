@@ -230,8 +230,32 @@ table, th, td {
   width: fit-content;
 }
 
-.mark_table, td, tr, th{
+.mark_table td, tr, th{
   border: 2px solid;
+  height: 50px;
+}
+
+.mark_table th{
+  background-color: aqua;
+}
+
+.mark_table tr:nth-child(even) {
+  background-color: #f2f2f2;  
+}
+
+.mark_table tr:nth-child(even):hover {
+  background-color: #d1f533;  
+}
+
+.mark_table tr:nth-child(odd):hover {
+  background-color: #d1f533;  
+}
+
+.mark_note{
+  position: absolute;
+  bottom: 0;
+  font-weight: bolder;
+  
 }
 
 /*timetable page*/
@@ -250,7 +274,6 @@ table, th, td {
 /*attendence page*/
 
 .attendance_table_content{
-  padding-left: 250px;
   padding-top: 20px;
 }
 
@@ -259,6 +282,32 @@ table, th, td {
   width: fit-content;
 }
 
-.attendance_table, td, tr, th{
+.attendance_table td, tr, th{
   border: 2px solid;
+  height: 50px;
+  
+}
+
+.attendance_table th{
+  background-color: aqua;
+  
+}
+
+.attendance_table tr:nth-child(even) {
+  background-color: #f2f2f2;  
+}
+
+.attendance_table tr:nth-child(even):hover {
+  background-color: #d1f533;  
+}
+
+.attendance_table tr:nth-child(odd):hover {
+  background-color: #d1f533;  
+}
+
+.attendence_note{
+  position: absolute;
+  bottom: 0;
+  font-weight: bolder;
+  
 }
