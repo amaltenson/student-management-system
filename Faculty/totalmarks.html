@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Homepage</title>
+        <link rel="stylesheet" href="/Faculty/login_files/style1.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    </head>
+    <body>
+
+        <!--wrapper start-->
+        <div class="wrapper">
+            <!--header menu start-->
+            <div class="header">
+                <div class="header-menu">
+                    <div class="title">SJCET</div>
+                    <div class="sidebar-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-power-off"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--header menu end-->
+            <!--sidebar start-->
+            <div class="sidebar">
+                <div class="sidebar-menu">
+                    <center class="profile">
+                        <img src="/Faculty/asset/user1.jpg" alt="">
+                        <p>USER</p>
+                    </center>
+                    <li class="item">
+                        <a href="#" class="menu-btn">
+                            <i class="fas fa-desktop"></i><span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="item" id="profile">
+                        <a href="/Faculty/attendance.html" class="menu-btn">
+                            <i class="fas fa-check"></i><span>Attendance <i class="fas fa-chevron-down drop-down"></i></span>
+                        </a>
+                        <div class="sub-menu" id="myDropdown">
+                            <a href="#"><span>Enter Attendance</span></a>
+                            <a href="#"></i><span>Edit Attendance</span></a>
+							<a href="/Faculty/viewattendance.html"></i><span>View Attendance</span></a>
+							<a href="#"></i><span>Details of individual student</span></a>
+                        </div>
+                    </li>
+                    <li class="item" id="messages">
+                        <a href="/Faculty/marks.html" class="menu-btn">
+                            <i class="far fa-edit"></i><span>Marks <i class="fas fa-chevron-down drop-down"></i></span>
+                        </a>
+                        <div class="sub-menu">
+                            <a href="#"><span>Enter Marks</span></a>
+                            <a href="/Faculty/editmark.html"><span>Edit marks</span></a>
+                            <a href="#"><span>Total Marks of Students</span></a>
+                        </div>
+                    </li>
+                    <li class="item" id="settings">
+                        <a href="/Faculty/timetable.html" class="menu-btn">
+                            <i class="far fa-calendar-alt"></i><span>Timetable </span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="/Faculty/report.html" class="menu-btn">
+                            <i class="fas fa-folder"></i><span>Report</span>
+                        </a>
+                    </li>
+                </div>
+            </div>
+            <!--sidebar end-->
+            <section class="about">
+				<div class="main-container">
+                    
+                        <table class="totalmark">
+                            <caption class="font"><b>STUDENT MARK</b></caption><br><br><br>
+                            <thead><br>
+                                <tr>
+                                    <th class="thclass" id="thStudent USN">Student ID</th>
+                                    <th class="thclass" id="thStudent Name">Student Name</th>
+                                    <th class="thclass" id="thInternal 1">Internal 1</th>
+                                    <th class="thclass" id="thInternal 2">Internal 2</th>
+                                    <th class="thclass" id="thInternal 3">Model</th>
+                                    <th class="thclass" id="thEvent 1">Assignment 1</th>
+                                    <th class="thclass" id="thEvent 2">Assignment 2</th>
+                                    <th class="thclass" id="thSEE">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr >
+                                    <th class="thclass">01</th>
+                                    <th class="thclass" >AMAL TENSON</th>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                </tr>
+                                <tr>
+                                    <th class="thclass">02</th>
+                                    <th class="thclass">AMALU CS</th>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                </tr>
+                                <tr>
+                                    <th class="thclass">03</th>
+                                    <th class="thclass">AMRUTHA SHAJU</th>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                </tr>
+                                <tr>
+                                    <th class="thclass">04</th>
+                                    <th class="thclass">ANATE JOSE</th>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                </tr>
+                                <tr>
+                                    <th class="thclass">05</th>
+                                    <th class="thclass">ANJALY LATHEESH</th>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                </tr>
+                                <tr>
+                                    <th class="thclass">06</th>
+                                    <th class="thclass">ANJALY JAIKUMAR</th>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                </tr>
+                                <tr>
+                                    <th class="thclass">07</th>
+                                    <th class="thclass">ANJALY MOTILAL</th>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                </tr>
+                                <tr>
+                                    <th class="thclass">08</th>
+                                    <th class="thclass">ANUPRIYA B</th>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                </tr>
+                                <tr>
+                                    <th class="thclass">09</th>
+                                    <th class="thclass">ARUSHA JAMES</th>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                </tr>
+                                <tr>
+                                    <th class="thclass">10</th>
+                                    <th class="thclass">BIBIN BENNY</th>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                </tr>
+                                <tr>
+                                    <th class="thclass">11</th>
+                                    <th class="thclass">BOBY MATHEWS</th>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                </tr>
+                                <tr>
+                                    <th class="thclass">12</th>
+                                    <th class="thclass">DONA SANTHOSH</th>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                </tr>
+                                <tr>
+                                    <th class="thclass">13</th>
+                                    <th class="thclass">FEMI FRANCIS</th>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                </tr>
+                                <tr>
+                                    <th class="thclass">14</th>
+                                    <th class="thclass">GAIUS PHILIP</th>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                </tr>
+                                <tr>
+                                    <th class="thclass">15</th>
+                                    <th class="thclass">GEETHU KU</th>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                </tr>
+                                <tr>
+                                    <th class="thclass">16</th>
+                                    <th class="thclass">GRACE ANN</th>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                </tr>
+                                <tr>
+                                    <th class="thclass">17</th>
+                                    <th class="thclass">JISSIN MICHEAL</th>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                </tr>
+                                <tr>
+                                    <th class="thclass">18</th>
+                                    <th class="thclass">JOBIN JOY</th>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                </tr>
+                                <tr>
+                                    <th class="thclass">19</th>
+                                    <th class="thclass">NIBU GEROGE</th>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                </tr>
+                                <tr>
+                                    <th class="thclass">20</th>
+                                    <th class="thclass">RAJEEMOL R</th>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                </tr>
+                                <tr>
+                                    <th class="thclass">21</th>
+                                    <th class="thclass">SREELAKSHMI MR</th>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                </tr>
+                                <tr>
+                                    <th class="thclass">22</th>
+                                    <th class="thclass">VISHAK TS</th>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                </tr>
+                                <tr>
+                                    <th class="thclass">23</th>
+                                    <th class="thclass">VRINDA SHINE</th>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                    <td class="thclass"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+               </div>
+            </section>
+        <script type="text/javascript">
+
+        $(document).ready(function(){
+            $(".sidebar-btn").click(function(){
+                $(".wrapper").toggleClass("collapse");
+            });
+        });
+		
+   
+        </script>
+
+    </body>
+</html>
