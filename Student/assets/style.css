@@ -3,6 +3,8 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  padding: 0px;
+  line-height: 1.5;
 }
 
 .navbar {
@@ -53,8 +55,8 @@ body {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: auto ;
-  grid-gap: 10px;
-      
+  grid-gap: 1.5rem;
+        
 }
 
 .grid-container > div {
@@ -64,7 +66,9 @@ body {
   text-align: center;
   padding: 25px 0;
   font-size: 20px;
-  
+  box-shadow: 5px 0px 18px #888888;
+  border-radius: 6px;
+  color: #fff;
 }
 .grid-container , button{
   font-size: 40px;
@@ -73,14 +77,15 @@ body {
 }
 
 #grid_button{
-  
-  font-size: 20px;
+  padding-top: 10px;
+  font-size: 30px;
   position: absolute;
   bottom: 0;
   padding-left: 0;
   width: 100%;
   right: 0;
   background-color: yellow;
+  text-align: center;
 }
 
 #grid_button a:hover{
@@ -88,14 +93,15 @@ body {
 }
 
 #grid_button1{
-  
-  font-size: 20px;
+  padding-top: 10px;
+  font-size: 30px;
   position: absolute;
   bottom: 0;
   padding-left: 0;
   width: 100%;
   right: 0;
   background-color: yellow;
+  text-align: center;
 }
 
 #grid_button1 a:hover{
@@ -103,15 +109,15 @@ body {
 }
 
 #grid_button2{
-  
-  font-size: 20px;
+  padding-top: 10px;
+  font-size: 30px;
   position: absolute;
   bottom: 0;
   padding-left: 0;
   width: 100%;
   right: 0;
   background-color: yellow;
-  
+  text-align: center;
 }
 
 #grid_button2 a:hover{
@@ -119,16 +125,16 @@ body {
 }
 
 #grid_button3{
-  
-  font-size: 20px;
+  padding-top: 10px;
+  font-size: 30px;
   position: absolute;
   bottom: 0;
   padding-left: 0;
   width: 100%;
   right: 0;
   background-color: yellow;
+  text-align: center;
 }
-
 a{
   text-decoration: none;
 }
