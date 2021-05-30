@@ -270,7 +270,7 @@ tr:hover {background-color:#f5f5f5;}
 	 background:blue;
 	 color:white;
 }
-
+/*attendance*/
 .table {
 	position:absolute;
 	align:center;
@@ -353,4 +353,26 @@ tfoot .tr:last-child .td:first-child {
 tfoot .tr:last-child .td:last-child {
     border-bottom-right-radius: 1px;
   }
+  /* dashboard */
+  .main-content {
+    background-color: #fafafa;
+    width: calc(100% - 250px);
+    height: 100%;
+    margin-left: 250px;
+    padding: 20px 30px;
+  }
+  .main-content .panel-wrapper {
+    margin: 20px 0;
+    box-shadow: 0px 1px 5px #777;
+  }
   
+  .main-content .panel-wrapper .panel-head {
+    background-color: #00A5F2;
+    color: #fff;
+    padding: 10px 10px;
+    border: 1px solid #00A5F2;
+  }
+  .main-content .panel-wrapper .panel-body {
+    padding: 20px 10px;
+    font-size: 80%;
+  }
