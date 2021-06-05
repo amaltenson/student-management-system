@@ -1,80 +1,124 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/Student/assets/style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SJCET</title>
+    <link rel="stylesheet" href="/Student/assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
 
-    <div class="navbar">
-        <a class="active" href="welcome.html"><i class="fa fa-fw fa-home"></i> Home</a> 
-        <a href="#"><i class="fa fa-fw fa-search"></i> Search</a> 
-        <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
-        <div class="top_nav_right">
-          <a href="login.html"><i class="fa fa-fw fa-user"></i>Logout</a>
+    <input type="checkbox" id="check">
+    <!--header area start-->
+    <header>
+      <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+      </label>
+      <div class="left_area">
+        <h3><span>SJCET</span></h3>
       </div>
-    </div>
-
-    <!-- user name-->
-
-<div class="welcome_section">
-  <h1 >
-    Welcome user
-  </h1>
-</div>
- 
-<!-- 4 grids-->
-
-<div class="grid-container">
-  <div>
-    <div class="image">
-      <img src="/Student/assets/images/profile.png" alt="" srcset="">
-    </div>
-    <h2>View Profile</h2>
-   <p>
-    View the details of the student. it displays the basic student details like name admission no phone no etc .
-   </p> 
+      <div class="right_area">
+        <a href="#" class="logout_btn">Logout</a>
+      </div>
+    </header>
+    <!--header area end-->
     
-   <button id="grid_button" ><a href="/Student/profile.html">Profile</a></button>
-  </div>
-  <div>
-    <div class="image">
-      <img src="/Student/assets/images/attendance.jpg" alt="" srcset="">
+    <!--sidebar start-->
+    <div class="sidebar">
+      <div class="profile_info">
+        <img src="/Student/assets/images/1.png" class="profile_image" alt="">
+        <h4>User</h4>
+      </div>
+      <a href="welcome.html"><i class="fas fa-clipboard"></i></i><span>Home</span></a>
+      <a href="profile.html"><i class="fas fa-user"></i><span>Profile</span></a>
+      <a href="timetable.html"><i class="fas fa-table"></i><span>Timetable</span></a>
+      <a href="marks.html"><i class="fas fa-th"></i><span>Marks</span></a>
+      <a href="attendance.html"><i class="fas fa-user-check"></i><span>Attendance</span></a>
     </div>
-    <h2>Attendence</h2>
-   <p>
-    View the attendence status of your course. The attendence of each subject is displayed as a 
-      list of classes that were conducted .
-   </p> 
-    
-   <button id="grid_button1" ><a href="/Student/attendance.html">Attendence</a></button>
-  </div>
-  <div>
-    <div class="image">
-      <img src="/Student/assets/images/marks.jpg" alt="" srcset="">
-    </div>
-    <h2>Marks</h2>
-    <p>
-      View the marks for each subject. These include the marks of 2 internal exams and the End 
-    Semester exam.
-    
-    </p>
-    <button id="grid_button2" ><a href="/Student/marks.html">Marks</a></button>
-  </div>
-  <div>
-    <div class="image">
-      <img src="/Student/assets/images/timetable.png" alt="" srcset="">
-    </div>
-    <h2>Timetable</h2>
-    <p>
-      View the timetable in a tabular form. The timetable displays all the courses of the student and 
-    the time and day in which they are conducted.
-    </p>
-    <button id="grid_button3" ><a href="/Student/timetable.html">Timetable</a></button>
-  </div>  
-    
-</div>
+    <!--sidebar end-->
 
-</body>
+    <div class="content" align="center">
+      
+      <div class="container">
+    
+        <div class="row">
+    
+          <div class="card">
+            <div class="card-header">
+                <img src="/Student/assets/images/profile.png" alt="" srcset="">
+            </div>
+            <h3 align="center">Profile</h3>
+            <div class="card-body">
+              
+              <p>
+                View the details of the student. it displays the basic student details like name, admission number,
+                 phone number etc .
+              </p>
+              
+              
+              <a href="/Student/profile.html" class="btn">Read more</a>
+            </div>
+          </div>
+    
+          <div class="card">
+            <div class="card-header">
+              <img src="/Student/assets/images/attendance.jpg" alt="" srcset="">
+            </div>
+            <h3 align="center">Attendance</h3>
+            <div class="card-body">
+              <p>
+                View the attendence status of your course. The attendence of each subject is displayed as a 
+                list of classes that were conducted
+              </p>
+              
+              <a href="/Student/attendance.html" class="btn">Read more</a>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-header">
+                <img src="/Student/assets/images/marks.jpg" alt="" srcset="">
+            </div>
+            <h3 align="center">Marks</h3>
+            <div class="card-body">
+              <p>
+                View the marks for each subject. These include the marks of 3 internal exams, 2 assignments and the End 
+                Semester exam.
+                        </p>
+                        
+              <a href="/Student/marks.html" class="btn">Read more</a>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-header">
+                <img src="/Student/assets/images/timetable.png" alt="" srcset="">
+            </div>
+            <h3 align="center">Timetable</h3>
+            <div class="card-body">
+              <p>
+                View the timetable for each day. The timetable displays all the courses of the student and 
+                the time and day in which they are conducted.
+                        </p>
+              <a href="/Student/timetable.html" class="btn">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>       
+
+    </div>
+    
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.nav_btn').click(function(){
+        $('.mobile_nav_items').toggleClass('active');
+      });
+    });
+    </script>
+
+  </body>
 </html>
+      

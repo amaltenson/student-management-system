@@ -1,119 +1,124 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/Student/assets/style.css">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sidebar Dashboard Template</title>
+    <link rel="stylesheet" href="/Student/assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
 
-</head>
-<body>
-
-    <!--top navbar    -->
-    <div class="navbar">
-        <span style="font-size:50px;cursor:pointer;color: white;" onclick="openNav()">☰</span> 
-        <div class="top_nav_right">
-            <a href="login.html"><i class="fa fa-fw fa-user"></i>Logout</a>
-        </div> 
-    </div>
+    <input type="checkbox" id="check">
+    <!--header area start-->
+    <header>
+      <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+      </label>
+      <div class="left_area">
+        <h3><span>SJCET</span></h3>
+      </div>
+      <div class="right_area">
+        <a href="#" class="logout_btn">Logout</a>
+      </div>
+    </header>
+    <!--header area end-->
     
-    <!--side navbar-->
-    <div id="mySidebar" class="sidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <a href="welcome.html"> Home</a> 
-    <a href="attendance.html">Attendence</a>
-    <a href="timetable.html">Timetable</a>
-    <a href="marks.html">Marks</a>
-    <a href="login.html">Logout</a>
+    <!--sidebar start-->
+    <div class="sidebar">
+      <div class="profile_info">
+        <img src="/Student/assets/images/1.png" class="profile_image" alt="">
+        <h4>User</h4>
+      </div>
+      <a href="welcome.html"><i class="fas fa-clipboard"></i></i><span>Home</span></a>
+      <a href="profile.html"><i class="fas fa-user"></i><span>Profile</span></a>
+      <a href="timetable.html"><i class="fas fa-table"></i><span>Timetable</span></a>
+      <a href="marks.html"><i class="fas fa-th"></i><span>Marks</span></a>
+      <a href="attendance.html"><i class="fas fa-user-check"></i><span>Attendance</span></a>
+    </div>
+    <!--sidebar end-->
+
+    <div class="content">
+        <section>
+        
+            <div class="mark_table_content" align="center" >
+                <table class="mark_table"  >
+                    <h1 align="center">Marks</h1>
+                        
+                    <tr>
+                        <th style="width: 13%;">Course No</th>
+                        <th class="from">Course Name</th>
+                        <th style="width: 11%;">Internels 1</th>
+                        <th style="width: 11%;">Internels 2</th>
+                        <th style="width: 11%;">Internels 3</th>
+                        <th style="width: 10%;">Assignment 1</th>
+                        <th style="width: 10%;">Assignment 2</th>
+                        <th style="width: 8%;">SEE</th>
+                    </tr>
+                    <tr>
+                        <td>RLMCA202</td>
+                        <td>Application Development and Maintenance </td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>RLMCA204</td>
+                        <td>Big Data Technologies</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>RLMCA206</td>
+                        <td>Mobile Computing</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>RLMCA208</td>
+                        <td>Introduction to Machine Learning</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>RLMCA274</td>
+                        <td>Business Intelligence and its Applications</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
     </div>
 
-    <!--mark body-->
-    <section>
-        
-        <div class="mark_table_content" align="center">
-            <table class="mark_table"  >
-                <h1 align="center">Marks</h1>
-                    
-                <tr>
-                    <th>Course No</th>
-                    <th>Course Name</th>
-                    <th>Internels 1</th>
-                    <th>Internels 2</th>
-                    <th>Internels 3</th>
-                    <th>Assignment 1</th>
-                    <th>Assignment 2</th>
-                    <th>SEE</th>
-                </tr>
-                <tr>
-                    <td>RLMCA202</td>
-                    <td>Application Development and Maintenance </td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                </tr>
-                <tr>
-                    <td>RLMCA204</td>
-                    <td>Big Data Technologies</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                </tr>
-                <tr>
-                    <td>RLMCA206</td>
-                    <td>Mobile Computing</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                </tr>
-                <tr>
-                    <td>RLMCA208</td>
-                    <td>Introduction to Machine Learning</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                </tr>
-                <tr>
-                    <td>RLMCA274</td>
-                    <td>Business Intelligence and its Applications</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                </tr>
-            </table>
-        </div>
-    </section>
-
-    <p class="mark_note">**Note: This page shows the marks of the student for each of the subject.
-        It includes 3 internal examination marks, two assignment marks and finally end semester 
-        examination mark 
-    </p>
-
-
-    <!--script for side navbar-->
-    <script>
-    function openNav() {
-    document.getElementById("mySidebar").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    }
-
-    function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-    }
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.nav_btn').click(function(){
+        $('.mobile_nav_items').toggleClass('active');
+      });
+    });
     </script>
-   
-</body>
-</html> 
+
+  </body>
+</html>
+      

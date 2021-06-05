@@ -1,86 +1,131 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/Student/assets/style.css">
-</head>
-<body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SJCET</title>
+    <link rel="stylesheet" href="/Student/assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
 
-    <!--top navbar    -->
-    <div class="navbar">
-        <span style="font-size:50px;cursor:pointer;color: white;" onclick="openNav()">☰</span> 
-        <div class="top_nav_right">
-            <a href="login.html"><i class="fa fa-fw fa-user"></i>Logout</a>
-        </div> 
-    </div>
+    <input type="checkbox" id="check">
+    <!--header area start-->
+    <header>
+      <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+      </label>
+      <div class="left_area">
+        <h3><span>SJCET</span></h3>
+      </div>
+      <div class="right_area">
+        <a href="#" class="logout_btn">Logout</a>
+      </div>
+    </header>
+    <!--header area end-->
     
-    <!--side navbar-->
-    <div id="mySidebar" class="sidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <a href="welcome.html"> Home</a> 
-    <a href="attendance.html">Attendence</a>
-    <a href="timetable.html">Timetable</a>
-    <a href="marks.html">Marks</a>
-    <a href="login.html">Logout</a>
+    <!--sidebar start-->
+    <div class="sidebar">
+      <div class="profile_info">
+        <img src="/Student/assets/images/1.png" class="profile_image" alt="">
+        <h4>User</h4>
+      </div>
+      <a href="welcome.html"><i class="fas fa-clipboard"></i></i><span>Home</span></a>
+      <a href="profile.html"><i class="fas fa-user"></i><span>Profile</span></a>
+      <a href="timetable.html"><i class="fas fa-table"></i><span>Timetable</span></a>
+      <a href="marks.html"><i class="fas fa-th"></i><span>Marks</span></a>
+      <a href="attendance.html"><i class="fas fa-user-check"></i><span>Attendance</span></a>
     </div>
+    <!--sidebar end-->
 
-    <div class="profile_content">
-        <div class="profile_pic">
-            <img src="/Student/assets/images/profile.png" alt="" srcset="">
-        </div>
-        <div  class="profile_table">
-            <table style=border:0 cellpadding="0" cellspacing="0">
-                <tbody>
+    <div class="content" align="center">
+      
+        <div  class="profile_table" >
+            
+            <table style="background-color: #fff ;"  cellpadding="0" cellspacing="0" width="100%" >
+                <tbody >
                     <tr>
-                        <td align="left">student name</td>
-                        <td align="left">x</td>
+                        <th colspan="2" width="50%" >Student Details</th>
+                    </tr>
+                    <tr>
+                        <td align="left">Admission No:
+                        </td>
+                        <td align="left" >
+                            <span >x</span>
+                        </td>
                         
                     </tr>
                     <tr>
-                        <td align="left">admission no</td>
-                        <td align="left">x</td>
+                        <td align="left">Student Name:
+                        </td>
+                        <td align="left" >
+                            <span >x</span>
+                        </td>
                     </tr>
                     <tr>
-                        <td align="left">gender</td>
-                        <td align="left">x</td>
+                        <td align="left">Gender:
+                        </td>
+                        <td align="left" >
+                            <span >x</span>
+                        </td>
                     </tr>
                     <tr>
-                        <td align="left">phone no</td>
-                        <td align="left">x</td>
+                        <td align="left">Date of Birth:
+                        </td>
+                        <td align="left" >
+                            <span >x</span>
+                        </td>
                     </tr>
                     <tr>
-                        <td align="left">email id</td>
-                        <td align="left">x</td>
+                        <td align="left">Course:
+                        </td>
+                        <td align="left" >
+                            <span >x</span>
+                        </td>
                     </tr>
                     <tr>
-                        <td align="left">course</td>
-                        <td align="left">x</td>
+                        <td align="left">Phone No:
+                        </td>
+                        <td align="left" >
+                            <span >x</span>
+                        </td>
+                        
                     </tr>
                     <tr>
-                        <td align="left">address</td>
-                        <td align="left">x</td>
+                        <td align="left">Address:
+                        </td>
+                        <td align="left" >
+                            <span >xxxxxxxxxxxxxxxxxxxxxxxxxxxx</span>
+                        </td>
+                        
                     </tr>
+                    
                     <tr>
-                        <td align="left">admission no</td>
-                        <td align="left">x</td>
+                        <td align="left">Email ID:
+                        </td>
+                        <td align="left">
+                            <span >x</span>
+
+                        </td>
+                        
                     </tr>
                 </tbody>
             </table>
-        </div>
+
+        </div>         
+
     </div>
+    
 
-    <!--script for side navbar-->
-    <script>
-    function openNav() {
-    document.getElementById("mySidebar").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    }
-
-    function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-    }
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.nav_btn').click(function(){
+        $('.mobile_nav_items').toggleClass('active');
+      });
+    });
     </script>
-   
-</body>
-</html> 
+
+  </body>
+</html>
+      
