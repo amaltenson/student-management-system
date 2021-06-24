@@ -13,7 +13,7 @@ body{
 
 .wrapper .header{
   z-index: 1;
-  background: #22242A;
+  background: #2f323a;
   position: fixed;
   width: calc(100% - 0%);
   height: 70px;
@@ -82,7 +82,7 @@ body{
 
 .wrapper .sidebar{
   z-index: 1;
-  background: #2F323A;
+  background:#22242A;
   position: fixed;
   top: 70px;
   width: 250px;
@@ -90,6 +90,7 @@ body{
   transition: 0.3s;
   transition-property: width;
   overflow-y: auto;
+
 }
 
 .wrapper .sidebar .sidebar-menu{
@@ -176,10 +177,8 @@ body{
 .wrapper .main-container{
   width: (100% - 250px);
   margin-top: 70px;
-  margin-left: 250px;
+  margin-left: 100px;
   padding: 15px;
-  background: url(background.jpg)no-repeat;
-  background-size: cover;
   height: 100vh;
   transition: 0.3s;
 }
@@ -221,6 +220,11 @@ body{
     justify-content: space-around;
     flex-wrap: wrap;
     padding-bottom: 2rem;
+    background: url(/Faculty/asset/background.png) no-repeat;
+    background-position: center;
+    
+    transition: 0.5s;
+    background-size:contain;
  }
 /* timetable page */
 .timetable_table, th, tr, td{
@@ -231,8 +235,9 @@ body{
 .timetable_table{
 margin-left: auto;
   margin-right: auto;
+  background-color: #e784ce;
 }
-tr:hover {background-color:#f5f5f5;}
+tr:hover {background-color:#51397e;}
 /* totalmarks */
 .font{
   font-size: 20px;
@@ -240,19 +245,32 @@ tr:hover {background-color:#f5f5f5;}
 }
 .totalmarks{
   width: 100%;
+ 
 }
 .thclass{
   height: 40px;
   width:150px;
+  border: 1px solid rgb(150, 66, 66);
+  background-color: #e784ce;
+
 }
+  
+ 
+
 /* edit marks */
 .editmarks{
   font-size:20px;
   width:100%;
+  border-collapse: collapse;
+  border: 1px solid rgb(230, 221, 221);
 }
 .thedit{
   height: 50px;
-  width:280px;
+  width:220px;
+  background-color: #04AA6D;
+  border: 1px solid rgb(226, 240, 240);
+  color:#ccc;
+
 }
 /* enter marks */
 .emark 
@@ -267,7 +285,7 @@ tr:hover {background-color:#f5f5f5;}
 		
 .emark:hover
   {
-	 background:blue;
+	 background:black;
 	 color:white;
 }
 /*attendance*/
@@ -283,20 +301,21 @@ tr:hover {background-color:#f5f5f5;}
   width:60%;
   height:60%;
   border-spacing: 0;
-  color: #4a4a4d;
+  color: #1a1a6e;
   font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .th{
   padding: 10px 15px;
   vertical-align: middle;
+  background-color:blue;
 }
 .td {
   padding: 10px 15px;
   vertical-align: middle;
 }
 .thead {
-  background: #395870;
-  background: linear-gradient(#49708f, #293f50);
+  background: #032b49;
+  background: linear-gradient(#154469, #255c86);
   color: #fff;
   font-size: 11px;
   text-transform: uppercase;
@@ -309,7 +328,10 @@ tr:hover {background-color:#f5f5f5;}
   border-top-right-radius: 5px;
 }
 .tbody tr:nth-child(even) {
-  background: #f0f0f2;
+  background: #e784ce;
+}
+.tbody tr:nth-child(odd) {
+  background: linen;
 }
 .td {
   border-bottom: 1px solid #cecfd5;
@@ -358,6 +380,7 @@ tfoot .tr:last-child .td:last-child {
     width: 65%;
     margin: 80px auto;
     margin-left: 300px;
+    
   }
   .heading {
     text-align: center;
@@ -430,4 +453,80 @@ tfoot .tr:last-child .td:last-child {
       width: 80%;
     }
   }
+  .content{
+    background: url(/Faculty/asset/background.png) no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 600%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.5s;
+    background-size:contain;
+    
+  }
+  /*student profile */
+  #student {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 120%;
+  }
   
+  #student td, #student th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  #student tr:nth-child(even){background-color:pink;}
+  #student tr:nth-child(odd){background-color:linen;}
+  
+  #student tr:hover {background-color:skyblue;}
+  
+  #student th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+  }
+  #student td{
+    color:blue;
+  }
+  /* profile */
+  .profile_table {
+    margin-top: 35px;
+    display: table;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.profile_table {
+  border: 1px solid rgb(236, 177, 228);
+  border-collapse: collapse
+}
+
+.profile_table td, tr, th{
+  border: 1px solid rgb(143, 54, 194);
+  height: 70px;
+  text-align: center;
+}
+
+.profile_table th{
+  background-color: rgb(236, 135, 174);
+}
+
+.profile_table tr:nth-child(even) {
+  background-color: #f2f2f2;  
+}
+
+.profile_table tr:nth-child(odd) {
+  background-color: #9b9696;  
+}
+
+.profile_table tr:nth-child(even):hover {
+  background-color: #ec6fb8;  
+}
+
+.profile_table tr:nth-child(odd):hover {
+  background-color: #e4a1c5;  
+}
