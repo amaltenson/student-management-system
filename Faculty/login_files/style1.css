@@ -219,7 +219,7 @@ body{
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding-bottom: 17rem;
+    padding-bottom: 19rem;
     padding-right: auto;
     background-image: url(/Faculty/asset/background.png);
     background-repeat: no-repeat;
@@ -540,3 +540,29 @@ tfoot .tr:last-child .td:last-child {
 .profile_table tr:nth-child(odd):hover {
   background-color: #e4a1c5;  
 }
+input[type=text] {
+
+  padding: 2px 2px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+  font-display: auto;
+  text-align: center;
+  background-color:#abebb0;
+  font-size: auto;
+  width: 50px;
+}
+
+input[type=text]:focus {
+  background-color: lightblue;
+}
+input[type=checkbox]{
+  width: auto;
+  background-color:#f12020;
+  color:rgb(177, 19, 19);
+  margin: auto;
+  cursor: pointer;
+}
+
+  
